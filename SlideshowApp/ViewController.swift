@@ -85,6 +85,15 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let imgdetailViewController:ImgdetailViewController = segue.destination as! ImgdetailViewController
         imgdetailViewController.img_count = self.img_count
+        if self.timer != nil {
+            self.timer.invalidate()
+            self.timer = nil
+            self.Mainbutton.setTitle("再生", for: .normal)
+            self.nextbutton.isEnabled = true
+            self.nextbutton.setTitleColor(UIColor.black, for: .normal)
+            self.backbutton.isEnabled = true
+            self.backbutton.setTitleColor(UIColor.black, for: .normal)
+        }
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
