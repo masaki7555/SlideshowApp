@@ -12,9 +12,9 @@ class ImgdetailViewController: UIViewController {
     
     var img_count = 0
     
-    var img1 = UIImage(named:"img1")!
-    var img2 = UIImage(named:"img2")!
-    var img3 = UIImage(named:"img3")!
+    var img1 = UIImage(named:"img1.jpg")
+    var img2 = UIImage(named:"img2.jpg")
+    var img3 = UIImage(named:"img3.jpg")
     
     @IBOutlet weak var detail: UIImageView!
     

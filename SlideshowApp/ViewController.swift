@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     
     var timer: Timer!
     
-    var img1 = UIImage(named:"img1")!
-    var img2 = UIImage(named:"img2")!
-    var img3 = UIImage(named:"img3")!
+    var img1 = UIImage(named:"img1.jpg")
+    var img2 = UIImage(named:"img2.jpg")
+    var img3 = UIImage(named:"img3.jpg")
     var img_count = 1
     
     override func viewDidLoad() {
